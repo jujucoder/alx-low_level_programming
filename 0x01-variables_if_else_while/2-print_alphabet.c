@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * Return : 0
+ * Return: 0
  */
 
 int main(void)
@@ -16,4 +16,6 @@ int main(void)
 		alpha++;
 	}
 	putchar('\n');
+
+	return (0);
 }
