@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int a = 0;
+	int d = 0;
 
-	while (a < 10)
+	while (d < 10)
 	{
-		putchar(a);
-		a++;
+		putchar(d);
+		d++;
 	}
 	putchar('\n');
 
