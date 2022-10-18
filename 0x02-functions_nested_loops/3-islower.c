@@ -3,6 +3,8 @@
 /**
  * _islower - Entry point
  *
+ * @c: contains value to be compared
+ *
  * Description:Program that checks for lowercase characters
  *
  * Return:1 if lowercase, 0 if uppercase
