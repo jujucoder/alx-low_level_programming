@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 	/* gets the size of the sdestination string */
 	len = 0;
 
-	while ( dest[len] != '\0' )
+	while (dest[len] != '\0')
 	{
 		len++;
 	}
