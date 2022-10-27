@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 
 /**
@@ -15,8 +14,12 @@ char *_strcat(char *dest, char *src)
 	int i;
 
 	/* gets the size of the sdestination string */
+	len = 0;
 
-	len = strlen(dest);
+	while ( dest[len] != '\0' )
+	{
+		len++;
+	}
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
