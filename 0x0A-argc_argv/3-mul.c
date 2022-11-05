@@ -2,7 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+/**
+ * main - entry point
+ * @argc: argument count
+ * @argv: argument list
+ * Return: 1(Error) 0(success)
+ */
 int main(int argc, char **argv)
 {
 	if (argc != 3)
