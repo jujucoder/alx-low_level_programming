@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - entry point
@@ -13,10 +14,10 @@
 int main(int argc, char **argv)
 {
 	int count;
-	int number;
 	int total;
+	int item;
 
-	if (argc == 0)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
@@ -25,19 +26,17 @@ int main(int argc, char **argv)
 	{
 		for (count = 1; count < argc; count++)
 		{
-			number = atoi(argv[count]);
-			if (number == 0)
+			for (item = 0; argv[count][item]; item++)
 			{
-				printf("Error\n");
-				return (1);
+				if (!isdigit(argv[count][item]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-			{
-				total = total + number;
-			}
+			total += atoi(argv[count]);
 		}
 	}
 	printf("%d\n", total);
-
 	return (0);
 }
