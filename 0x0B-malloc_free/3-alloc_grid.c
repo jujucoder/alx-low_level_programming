@@ -4,6 +4,7 @@
  * alloc_grid - allocate a 2 dimensional array of integers
  * @width:no of  array columns
  * @height:no of array rows
+ * Return: NULL(error), pointer to array(success)
  */
 
 int **alloc_grid(int width, int height)
