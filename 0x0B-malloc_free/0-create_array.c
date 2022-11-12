@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+ * create_array - create an array of chars
+ * @size:size of array
+ * @c:char to to be in the array
+ * Return: NULL(error) pointer to array(success)
+ */
 
 char *create_array(unsigned int size, char c)
 {
@@ -11,8 +17,10 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	array = malloc(size);
+	if (array == NULL)
+		return (1);
 
-	for (count = 0; count < size; count ++)
+	for (count = 0; count < size; count++)
 		array[count] = c;
 	array[count] = '\0';
 	return (array);
