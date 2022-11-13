@@ -5,6 +5,8 @@ int _strlen_recursion(char *s)
 {
 	int count;
 
+	count = 0;
+
 	if (*s)
 	{
 		count++;
