@@ -3,7 +3,7 @@
  * _pow_recursion  - calculate the power of a given no
  * @x: number
  * @y: power
- * Return: -1(error) 
+ * Return: -1(error)
  */
 int _pow_recursion(int x, int y)
 {
