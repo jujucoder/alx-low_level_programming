@@ -8,7 +8,7 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int count, total;
+	int count;
 
 	if (size <= 0)
 		return (-1);
@@ -22,4 +22,3 @@ int int_index(int *array, int size, int (*cmp)(int))
 	}
 	return (-1);
 }
-
