@@ -6,7 +6,7 @@
  * @separator: separator
  * @int: number of args
  * @...: variable num of args
- */
+ /
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list num;
