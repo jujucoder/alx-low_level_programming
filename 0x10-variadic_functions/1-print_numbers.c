@@ -4,7 +4,7 @@
 /**
  * print_numbers - print numbers with a separator
  * @separator: separator
- * @int: number of args
+ * @n: number of args
  * @...: variable num of args
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -20,7 +20,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", j);
 		if (separator == NULL)
 			continue;
-		printf("%s", separator);
+		if (i != (n-1))
+			printf("%s", separator);
 	}
 	va_end(num);
 	printf("\n");
