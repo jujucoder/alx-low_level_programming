@@ -4,13 +4,13 @@
  * sum_them_all - sum all arguments
  * @n: number of arguments
  * @...: variable numbers of params
- * Return: sum of args
+ * Return: If n == 0 - 0.
+ *	Otherwise - the sum of all parameters.
  */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list num;
-	int sum = 0;
-	unsigned int j;
+	unsigned int j, sum = 0;
 
 	va_start(num, n);
 
