@@ -1,12 +1,13 @@
 #include <stdio.h>
+
 /**
- * before - print string befor main runs
+ * premain - run before main
  */
 
-void __attribute__((constructor)) before(void);
+void __attribute__ ((constructor)) premain()
 
-void before(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n
+			I bore my house upon my back!\n");
 }
 
