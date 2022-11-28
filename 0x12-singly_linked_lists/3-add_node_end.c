@@ -12,6 +12,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *last;
 	list_t *current;
 	unsigned int count;
+	char *temp;
 
 	for (count = 0; str[count]; count++)
 	;
@@ -20,11 +21,15 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (last == NULL)
 		return (NULL);
 
-	last->str = strdup(str);
-	if (last->str == NULL)
+	temp = strdup(str);
+	if (temp == NULL)
+	{
+		free(last);
 		return (NULL);
+	}
 
 	last->len = count;
+	last->str = temp;
 	last->next = NULL;
 	if (*head == NULL)
 	{
